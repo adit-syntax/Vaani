@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+
+    <!-- Primary Electric Blue & Purple Gradient -->
+    <linearGradient id="vaani-cyan-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <!-- Glow Effect Filter -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Container -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-gradient)"/>
+  
+  <!-- Subtle Glowing Inner Circle -->
+  <circle cx="256" cy="256" r="190" stroke="url(#vaani-cyan-purple)" stroke-width="4" stroke-opacity="0.25" fill="none"/>
+
+  <!-- Stylized Voice Wave / V-Shape Icon with Glow -->
+  <g filter="url(#neon-glow)">
+    <!-- Central Soundwave Bars forming a futuristic V-shape -->
+    <capsule-group fill="url(#vaani-cyan-purple)">
+      <!-- Left Outer Wave Bar -->
+      <rect x="126" y="196" width="24" height="120" rx="12" fill="url(#vaani-cyan-purple)"/>
+      
+      <!-- Left Inner Wave Bar -->
+      <rect x="176" y="156" width="24" height="200" rx="12" fill="url(#vaani-cyan-purple)"/>
+      
+      <!-- Central Vertex Point (Microphone Pulse) -->
+      <rect x="226" y="216" width="24" height="140" rx="12" fill="url(#vaani-cyan-purple)"/>
+
+      <!-- Right Inner Wave Bar -->
+      <rect x="312" y="156" width="24" height="200" rx="12" fill="url(#vaani-cyan-purple)"/>
+      
+      <!-- Right Outer Wave Bar -->
+      <rect x="362" y="196" width="24" height="120" rx="12" fill="url(#vaani-cyan-purple)"/>
+    </capsule-group>
+
+    <!-- Sleek Overlay V-Sweep Path -->
+    <path d="M140 180 L256 370 L372 180" stroke="url(#vaani-cyan-purple)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  
+  <!-- Central Pulse Glowing Orb -->
+  <circle cx="256" cy="230" r="28" fill="#FFFFFF" filter="url(#neon-glow)"/>
+</svg>
